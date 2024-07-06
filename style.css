@@ -5,7 +5,7 @@
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
+a, abbr, acronym, address, big, cite,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
@@ -48,9 +48,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/* конец сброса стилей браузера */
 .avatar {
-    width: 64px;
-    height: 64px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
 }
 .footer-icon {
@@ -69,11 +70,11 @@ background-color: gray;
 padding:16px;
 }
 .footer-links{
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center;
-gap: 32px;
+display: flex; 
+flex-direction: row; /* горизонталь */ 
+align-items: center; /* выравнивает по центру */
+justify-content: center; /* выравнивает по центру */
+gap: 32px; /* добавляет отступы между элементами */
 }
 .main{
     min-height: 100vh;
@@ -86,4 +87,34 @@ gap: 32px;
 .header-name{
     font-size: 38px;
     line-height: 50px;
+    margin:  0 0 16px 0;
+}
+.header-contact{
+display: flex;
+align-items: center;
+gap: 16px;
+padding: 16px 0 0 0;
+border-top: 1px solid black;
+
+}
+.header-list-item{
+
+}
+.main-content-wrapper{
+display:flex;
+}
+.content-title{
+    font-size: 28px;
+    line-height: 40px;
+    padding: 16px;
+    text-align: right;
+    width: 30%;
+}
+.content-info{
+    font-size: 24px;
+    line-height: 32px;
+    padding: 16px;
+}
+.content-info p {
+    max-width: 75%;
 }

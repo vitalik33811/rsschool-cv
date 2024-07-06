@@ -97,9 +97,6 @@ padding: 16px 0 0 0;
 border-top: 1px solid black;
 
 }
-.header-list-item{
-
-}
 .main-content-wrapper{
 display:flex;
 }
@@ -114,7 +111,16 @@ display:flex;
     font-size: 24px;
     line-height: 32px;
     padding: 16px;
+    width: 70%;
 }
-.content-info p {
+.content-info p, .content-info ul, .content-info pre {
     max-width: 75%;
+}
+.content-info ul{
+    list-style-type: disc;
+}
+code{
+    /* оформление переносов */
+    white-space: pre-wrap; 
+    word-wrap: normal;
 }
